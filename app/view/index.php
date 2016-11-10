@@ -82,5 +82,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/lib/js/bootstrap.min.js"></script>
     <script src="/assets/js/paginas/listar-post.js"></script>
+    <script src="/assets/js/paginas/excluir-post.js"></script>
 </body>
 </html>

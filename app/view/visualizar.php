@@ -53,22 +53,16 @@
             <div class="col-lg-8">
                 <!-- Blog Post -->
                 <!-- Title -->
-                <h1>Meu primeiro blog</h1>
+                <h1 id="titulo"></h1>
                 <!-- Author -->
-                <p class="lead">por <a href="javascript:;">Yves Clêuder</a></p>
+                <p class="lead">por <a href="javascript:;" id="autor"></a></p>
                 <hr>
                 <!-- Date/Time -->
-                <p><span class="glyphicon glyphicon-time"></span> Publicidado em 04/10/2016 às 12:00:00</p>
-                <hr>
-                <!-- Preview Image -->
-                <img class="img-responsive" src="http://placehold.it/900x300" alt="Imagem">
+                <p><span class="glyphicon glyphicon-time"></span> Publicidado em <span id="datahora"><span></p>
+                <p><span></span>Categoria: <span id="categoria"><span></p>
                 <hr>
                 <!-- Post Content -->
-                <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
+                <p id="conteudo"></p>
                 <hr>
                 <!-- Blog Comments -->
 
@@ -118,19 +112,11 @@
                     <h4>Categorias</h4>
                     <div class="row">
                         <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category A</a></li>
-                                <li><a href="#">Category B</a></li>
-                                <li><a href="#">Category C</a></li>
-                                <li><a href="#">Category D</a></li>
+                            <ul id="categoria1" class="list-unstyled">
                             </ul>
                         </div>
                         <div class="col-lg-6">
-                            <ul class="list-unstyled">
-                                <li><a href="#">Category E</a></li>
-                                <li><a href="#">Category F</a></li>
-                                <li><a href="#">Category G</a></li>
-                                <li><a href="#">Category H</a></li>
+                            <ul id="categoria2" class="list-unstyled">
                             </ul>
                         </div>
                     </div>
@@ -162,5 +148,6 @@
     <script src="/assets/js/jquery.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="/assets/lib/js/bootstrap.min.js"></script>
+    <script src="/assets/js/paginas/visualizar-post.js"></script>
 </body>
 </html>

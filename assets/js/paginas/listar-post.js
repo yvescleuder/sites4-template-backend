@@ -39,7 +39,7 @@ function retorno(resposta)
 	                        '<td>'+post.titulo+'</td>'+
 	                        '<td>'+post.datahora+'</td>'+
 	                        '<td>'+post.autor+'</td>'+
-	                        '<td><a href="/visualizar/'+post.id+'" class="btn btn-success btn-xs">Visualizar</a> <a class="btn btn-danger btn-xs">Excluir</a> <a href="/editar/'+post.id+'" class="btn btn-info btn-xs">Editar</a></td>'+
+	                        '<td><a href="/visualizar/'+post.id+'" class="btn btn-success btn-xs">Visualizar</a> <a class="btn btn-danger btn-xs" onclick="excluir('+post.id+');">Excluir</a> <a href="/editar/'+post.id+'" class="btn btn-info btn-xs">Editar</a></td>'+
 	                    '</tr>';
 		});
 

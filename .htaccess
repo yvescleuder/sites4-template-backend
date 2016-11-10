@@ -4,9 +4,9 @@
     # Páginas de exibições do início
     RewriteRule ^/?$ /app/view/index.php [NC,L]
     # Páginas de exibições de visualizar um post
-    RewriteRule ^visualizar/([0-9])/?$ /app/view/visualizar.php?id=$1 [NC,L]
+    RewriteRule ^visualizar/([0-9]+)/?$ /app/view/visualizar.php?id=$1 [NC,L]
     # Páginas de criação de um post
     RewriteRule ^criar/?$ /app/view/criar.php [NC,L]
     # Páginas de exibições de editar um post
-    RewriteRule ^editar/([0-9])/?$ /app/view/editar.php?id=$1 [NC,L]
+    RewriteRule ^editar/([0-9]+)/?$ /app/view/editar.php?id=$1 [NC,L]
 </IfModule>

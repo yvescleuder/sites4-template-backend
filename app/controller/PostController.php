@@ -49,4 +49,38 @@ class PostController extends Controller
 
 		return $this->resposta;
 	}
+
+	public function excluir()
+	{
+		// Pegamos o ID que está sendo enviado e enviamos uma requisição para nosso model.
+		$id = $this->input->get("id");
+		if($this->post->excluir($id))
+			$this->resposta = ["success" => true, "text" => "Post excluido com sucesso!"];
+		else
+			$this->resposta = ["success" => false, "text" => "Erro ao excluir um post!"];
+
+		return $this->resposta;
+	}
+
+	public function visualizar()
+	{
+		// Pegamos o ID que está sendo enviado e enviamos uma requisição para nosso model.
+		$id = $this->input->get("id");
+		return $this->post->visualizar($id);
+	}
+
+	public function alterar()
+	{
+		// Enviando os dados para ser inserindo no banco de dados
+		$dados = $this->input->get("post");
+
+		$alterar = $this->post->alterar($dados);
+
+		if($alterar)
+			$this->resposta = ["success" => true, "text" => "Post alterado com sucesso!"];
+		else
+			$this->resposta = ["success" => false, "text" => "Erro ao alterar o post!"];
+
+		return $this->resposta;
+	}
 }
